@@ -24,18 +24,9 @@ image_channel_fusions:
 
 
 subscribers:
-  front_cam:
-    topic_name: '/camera/depth/points'
+  lidar:
+    topic_name: '/livox/lidar_self_filtered_gravity_aligned'
     data_type: pointcloud
-  color_cam: # for color camera
-    topic_name: '/camera/rgb/image_raw'
-    camera_info_topic_name: '/camera/depth/camera_info'
-    data_type: image
-  semantic_cam: # for semantic images
-    topic_name: '/front_cam/semantic_image'
-    camera_info_topic_name: '/front_cam/camera/depth/camera_info_resized'
-    channel_info_topic_name: '/front_cam/channel_info'
-    data_type: image
 
 #### Publishers ########
 # topic_name:
